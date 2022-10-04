@@ -1,0 +1,9 @@
+var dateTimeStamp = 1597049017329;
+var dateObject = new Date(dateTimeStamp);
+var utcYearFromTS = dateObject.getUTCFullYear();
+var utcMonthFromTS = dateObject.getUTCMonth() + 1;
+var utcDateFromTS = dateObject.getUTCDate();
+var utcTimeFromTS = dateObject.getUTCHours();
+var utcMinutesFromTS = dateObject.getUTCMinutes();
+console.log("UTC Date in DD/MM/YYYY HH:MM  " + utcDateFromTS + "/"
++ utcMonthFromTS + "/" + utcYearFromTS + " " + utcTimeFromTS + "hrs : " + utcMinutesFromTS + "minutes");
